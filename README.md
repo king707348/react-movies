@@ -1,87 +1,47 @@
-# Welcome to React Router!
+# react-movies
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A small React + React Router project for browsing movie data (example / demo).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+![App screenshot](./public/12-16_002.png)
 
-## Features
+## 簡介
+這個專案以 **React 19**、**React Router 7** 與 **Tailwind CSS** 建構，示範如何與 Movie DB 類型的 API 整合（部分路由與 SSR 支援由 React Router 提供）。
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 快速開始
 
-## Getting Started
-
-### Installation
-
-Install the dependencies:
+安裝相依套件：
 
 ```bash
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
+啟動開發伺服器：
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+預設會顯示開發網址，或查看終端機輸出的本機位址。
 
-## Building for Production
+## 常用指令
 
-Create a production build:
+- 開發：`npm run dev`
+- 建置：`npm run build`
+- 伺服器（production）：`npm start`
+- 型別生成/檢查：`npm run typecheck`
 
-```bash
-npm run build
+## 環境變數
+在根目錄建立 `.env`，加入以下設定以供 API 存取：
+
+```env
+VITE_movies_token_auth=your_api_token_here
 ```
 
-## Deployment
+如果沒有設定，部分需要授權的 API 請求會失敗（請檢查瀏覽器控制台的錯誤訊息）。
 
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+## 圖片
+專案示意圖已放在 `public/12-16_002.png`，並已嵌入於本 README 中。
 
 ---
 
-Built with ❤️ using React Router.
+如果你希望我擴充 README（例如：新增貢獻指南、部署流程、更多截圖或 CI 設定），告訴我想加入的內容，我會繼續幫你補上.
