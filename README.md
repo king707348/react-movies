@@ -6,7 +6,7 @@ A small React + React Router project for browsing movie data (example / demo).
 
 ## 簡介
 這個專案以 **React 19**、**React Router 7** 與 **Tailwind CSS** 建構，示範如何與 Movie DB 類型的 API 整合（部分路由與 SSR 支援由 React Router 提供）。
-
+fetch TMDB讀取受歡迎電影資訊，使用shadcn carousel/card 對UI提供友善畫面，在判斷文字長度maxLeng>100收合
 ## 快速開始
 
 安裝相依套件：
