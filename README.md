@@ -43,5 +43,3 @@ VITE_movies_token_auth=your_api_token_here
 專案示意圖已放在 `public/12-16_002.png`，並已嵌入於本 README 中。
 
 ---
-
-如果你希望我擴充 README（例如：新增貢獻指南、部署流程、更多截圖或 CI 設定），告訴我想加入的內容，我會繼續幫你補上.
