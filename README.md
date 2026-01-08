@@ -36,8 +36,3 @@ npm run dev
 ```env
 VITE_movies_token_auth=your_api_token_here
 ```
-
-如果沒有設定，部分需要授權的 API 請求會失敗（請檢查瀏覽器控制台的錯誤訊息）。
-
-## 圖片
-專案示意圖已放在 `public/12-16_002.png`，並已嵌入於本 README 中。
